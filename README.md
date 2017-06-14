@@ -25,23 +25,25 @@ using pip:
 
 ## 4. Usage
 
-To use the API, failuremodel must be imported and a failuremodel.PredictFail
-object created:
+To use the API, `failuremodel` must be imported and a `PredictFail` object
+created:
 
     import failuremodel
     
     pf = failuremodel.PredictFail()
 
-Tests can then be run against the model using the predict method
+Tests can then be run against the model using the `predict()` method
 as follows:
 
     pf.predict("test01", 100, 0)
 
-Two methods can be used to access the alerts. First, print_alerts() will
+Two methods can be used to access the alerts. First, `print_alerts()` will
 pretty-print all alerts in the queue in the order in which they were generated.
-Alternatively, get_alert_queue() will return the AlertQueue, allowing manual
+Alternatively, `get_alert_queue()` will return the `AlertQueue`, allowing manual
 manipulation. Note that neither method clears the queue. This can be done by
-calling clear_alerts().
+calling `clear_alerts()`:
+
+    pf.clear_alerts()
     
 A sample driver file (driver.py) has been provided which demonstrates the above
 methods as well as manual manipulation of the AlertQueue. 
