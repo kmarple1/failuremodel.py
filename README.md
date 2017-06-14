@@ -1,13 +1,11 @@
 Machine Failure Prediction
 ==========================
 
-1. Description
---------------
+## 1. Description
 
 Model and predict machine failure based on temperatures and disk error counts.
 
-2. Contents
------------
+## 2. Contents
 
 This README should be part of a distribution containing the following files:
 
@@ -17,8 +15,7 @@ This README should be part of a distribution containing the following files:
  * failuremodel.py -- The main source code file.
  * README.md -- This file.
 
-3. Requirements
-------------
+## 3. Requirements
 
 The API relies on scikit-learn (http://scikit-learn.org), which requires SciPy 
 and NumPy. Assuming that these are installed, scikit-learn can be installed
@@ -26,8 +23,7 @@ using pip:
 
     pip install -U scikit-learn
 
-4. Usage
---------
+## 4. Usage
 
 To use the API, failuremodel must be imported and a failuremodel.PredictFail
 object created:
